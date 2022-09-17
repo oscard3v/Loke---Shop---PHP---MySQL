@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../tipografia/Poppins-Thin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#barra a {
+    color: white!important;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0px 10px;    
+}
+#barra a:hover {
+    background: #02141e1f;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ a:hover {
+    text-transform: none;
+}
+.white{
+    color:white;
+}
+.borde {
+    border-radius: 3px;
+}
+.main-title {
+    display: flex;
+    font-size: 4rem;
+    align-content: center;
+}
+/** nuevos **/
+.black-opacity {
+    background: url("../imgs/big/back.jpg")no-repeat center center;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+    color: #ffffff;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.black-opacity-title{
+    justify-content: center;
+    color: white;
+    font-family: "Poppins Medium";
+}
+.focal {
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px
+}
+.btn-universal {
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white!important;
+}
+.red,.alert_error {
+    color: indianred;
+}
+/* Cards */
+.cardlist .carditem {
+    background-color: #343a40;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+.cardlist .title { 
+    color: orange
+}
+.cardlist .content { 
+    color:white;
+}
+.cardlist .carditem {
+    width: 250px;
+}
+
+
+#enviados {
+    display: none;
+}
+#enviados:target {
+    display: flex;
+    align-content: center;
+    width: 90vw;
+    height: 90vh;
+    max-height: 450px;
+    z-index: 1;
+    position: absolute;
+}
+.desplegar {
+    display: none;
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    background: url("../recursos/logo.png")no-repeat;
+    font-size: 0;
+    position: absolute;
+    top:7px;
+    left:20px;
+    z-index: 1300;
+}
+header{
+    position: relative;
+}
+.active{
+    background: yellow;
+}
+.carousel-indicators {
+    padding: 10px;
+}
+.carousel-indicators li {
+    width: 15px;
+    height: 2px;
+    border-width: 0;
+    border-radius: 10%;
+    background: orange;
+}
+.carousel-indicators .active {
+    background: #77BCAF;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, .5);
+}
+.card-body{
+    padding-top: 1em;
+}
+.figure-caption {
+    min-height: 180px;
+}
+figure{
+    margin-top: 1em;
+    padding-top: 1em;
+}
+.btn-enviar:hover {
+    transition: .3s;
+    background-color: #1053dc;
+    color: white;
+}
+footer {
+    background-color: orange;
+    height: 340px;
+    padding-top: 2em;
+}
+footer ul li {
+    list-style: none;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5em;
+}
+.svg-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+}
+.icon:hover {
+    fill: #026FFF;
+}
+.menu-hambur {
+    width: 40px;
+    height: 40px;
+}
+.btn-hambur {
+    border: none;
+}
+.btn-hambur:focus {
+    outline: none;
+}
+#subir {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 10;
+}
+footer p, small {
+    color: white;
+}
+footer h4 {
+    color: orange;
+}
+footer p {
+    text-align: center;
+    line-height: .3em;
+    margin-bottom: .5em;
+}
+footer h4 {
+    text-align: center;
+}
+.desplegar {
+    display: none;
+}
+.mas {
+    cursor: pointer;
+    border: none;
+}
+.mas:hover {
+    transition: .4s;
+    background-color: #f9aa13;
+    color: black;
+}
+.detail {
+    margin-top: 2.5em;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.detail h2 {
+    margin-bottom: 1em;
+    color: orange;
+    text-align: center;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hero p {
+    font-size: 1em;
+}
+/**/
+.desplegar {
+    display: none;
+}
+.mas {
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .9);
+}
+.modal>a {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 4em;
+    right: 1em;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    color: #003A7E;
+    text-decoration: none;
+}
+.modal>a:hover {
+    transition: .5s;
+    background-color: #003A7E;
+    color: rgba(255, 255, 255, .9);
+}
+.modal>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    padding: 2em;
+    background-color: #CDECFF;
+    border-radius: 20px;
+}
+.divInterno img {
+    margin: 0 auto;
+}
+.divInterno h2 {
+    font-size: 1.5em;
+    color: #003A7E;
+    font-family: 'Segoe';
+    margin: 0 auto;
+}
+.divInterno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figcaption {
+    color:white;
+    max-width: 80%;
+    max-height: 80%;
+    text-align: center;
+    margin: 1em;
+}
+.contenedor h3 {
+    color: #026FFF;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+.contenedor p {
+    font-size: .9em;
+}
+.contenedor {
+    width: 300px;
+    height: 600px;
+}
+.contenedor figure {
+    height: 80%;
+}
+.bg{
+    background-color: #ffff;
+}
+body{
+    background-color: #ffff;
+}
+h3{
+    font-size: 1em;
+    color: orange;
+}
+h2{
+    font-size: 1em;
+    color: yellowgreen;
+}
+h5{
+    font-size: 1em;
+    color: orange;
+}
+label,.label{
+    font-size: .9em;
+    color: orange;
+}
+.er{
+    font-size: 2em;
+    color: orange;
+}
+.bg-orange{
+    background-color: orange;
+}
+.bg-green{
+    background-color: #07B38D;
+}
+.bg-green2{
+    background-color: #16FAEB;
+}
+.bg-green3{
+    background-color: #09D1E3;
+}
+
+.center-login {
+    padding-top: 4em;
+}
+.space {
+    padding-top: 5em;
+}
+.space1 {
+    margin-outside: 5em!important;
+}
+
+.borde {
+    border: 1px solid black;
+}
+.fondo1 {
+    background-color: pink;
+}
+.fondo2 {
+    background-color: lightcoral;
+}
+.fondo3 {
+    background-color: lightsalmon;
+}
+.fondo4 {
+    background-color: palegreen;
+}
+.fondo5 {
+    background-color: darkseagreen;
+}
+.fondo6 {
+    background-color: aquamarine;
+}
+.alto {
+    height: 300px;
+}
